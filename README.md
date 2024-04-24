@@ -11,3 +11,6 @@ To convert the csv to turtle run:
 
 [Steffen Rörtgen](mailto:steffen.roertgen@hbz-nrw.de)
 
+## Status
+
+Draft
