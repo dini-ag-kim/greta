@@ -68,7 +68,8 @@
     ;; Add Concept Scheme
     (ar/add g {:rdf/about :greta/greta
                :rdf/type :skos/ConceptScheme
-               :dct/title "Greta Kompetenzen@de"
+               :dct/title (lstr/->LangStr "Greta Kompetenzen" "de")
+               :dct/description (lstr/->LangStr "Auflistung der GRETA Kompetenzen" "de")
                :skos/hasTopConcept (map #(keyword "greta" (:id %)) topConcepts)})
     ;; Add Concepts
     (doseq [node parsed-csv-data]
@@ -77,7 +78,7 @@
 
 (defn csv-to-ttl
   [{:keys [csv out]}]
-  (println "Converting " csv " and writing to " out)
+  (println "Converting" csv "and writing to" out)
   (csv->ttl (str csv) (str out)))
 
 (comment

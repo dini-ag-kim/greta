@@ -67,7 +67,8 @@
 
 <https://w3id.org/kim/greta/greta>
         a                   skos:ConceptScheme ;
-        dct:title           "Greta Kompetenzen@de" ;
+        dct:description     "Auflistung der GRETA Kompetenzen"@de ;
+        dct:title           "Greta Kompetenzen"@de ;
         skos:hasTopConcept  <https://w3id.org/kim/greta/g_32> , <https://w3id.org/kim/greta/g_25> , <https://w3id.org/kim/greta/g_18> , <https://w3id.org/kim/greta/g_1> .
 
 <https://w3id.org/kim/greta/g_35>
