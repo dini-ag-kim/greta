@@ -64,7 +64,7 @@
     (reg/prefix :greta greta)
     (reg/prefix :skos "http://www.w3.org/2004/02/skos/core#")
     (reg/prefix :dct "http://purl.org/dc/terms/")
-    (ar/read g "template.ttl")
+    (ar/read g "template.n3")
     ;; Add Concept Scheme
     (ar/add g {:rdf/about :greta/greta
                :rdf/type :skos/ConceptScheme
